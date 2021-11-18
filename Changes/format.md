@@ -13,7 +13,7 @@ When uSync performs a report/import it checks the version against a file in the 
 Our recommendation is to perform a new export when the format version changes
 
 ## v9.0.4
-- Tabs are also syncronized wit their key value
+- ContentType/MediaType/MemberType Groups/Tabs are also syncronized with their key value
 - Nested nested content blocks (content blocks inside other content blocks) are serialized as escaped json to help with publish formatting.
 
 _As with all format updates, these chnges are not required and the functionalty will fall back when using older files - but will be faster when using upto date format version._
