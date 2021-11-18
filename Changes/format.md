@@ -12,7 +12,13 @@ When uSync performs a report/import it checks the version against a file in the 
 
 Our recommendation is to perform a new export when the format version changes
 
-## v8.17.0 / #9.0
+## v9.0.4
+- Tabs are also syncronized wit their key value
+- Nested nested content blocks (content blocks inside other content blocks) are serialized as escaped json to help with publish formatting.
+
+_As with all format updates, these chnges are not required and the functionalty will fall back when using older files - but will be faster when using upto date format version._
+
+## v8.17.0 / 9.0
 
 ### Change to support tabs in Document types
 Tab support in document types requires we now also store the alias, and tab type against a tab. for v8 these changes fail back to the name if they cannot find the alias, while in v9 the alias is always used. 
